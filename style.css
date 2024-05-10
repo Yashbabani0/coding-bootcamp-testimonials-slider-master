@@ -19,6 +19,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Inter", sans-serif;
+  background-color: rgba(226, 226, 245, 0.492);
 }
 .background_pattern_bg {
   height: 100vh;
@@ -47,14 +48,15 @@ body {
   height: 14vh;
   background-image: url(./images/pattern-quotes.svg);
   background-repeat: no-repeat;
-  top: 23%;
+  top: 10%;
   left: 18%;
   z-index: -1;
 }
 main {
   width: 70%;
   max-height: 100vh;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
+  display: flex;
 }
 .slide {
   position: relative;
@@ -62,11 +64,30 @@ main {
   width: 100%;
   height: 70vh;
 }
+.slide_btn {
+  background-color: white;
+  width: 5em;
+  border-radius: 4em;
+  padding: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -5%;
+  left: 5%;
+  z-index: 1;
+}
+.slide_btn img {
+  cursor: pointer;
+}
+
 .user_photo {
   width: 55%;
   height: 68vh;
   position: absolute;
   left: 50%;
+}
+.slider1 {
+  display: none;
 }
 .slider1_user_photo {
   background-image: url(./images/image-tanya.jpg);
@@ -74,7 +95,7 @@ main {
   background-size: cover;
 }
 .slider2 {
-  display: none;
+  display: ;
 }
 .slider2_user_photo {
   background-image: url(./images/image-john.jpg);
@@ -109,5 +130,69 @@ h5 {
   color: var(--Dark-Blue);
 }
 p {
+  font-size: 1em;
   color: var(--Grayish-Blue);
+}
+@media (max-width: 62em) {
+  .background_pattern_bg {
+    height: 100vh;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+  }
+  .background_pattern_curve {
+    top: 88%;
+    height: 18vh;
+  }
+  .background_pattern_quotes {
+    width: 40%;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+  main {
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .slide {
+    flex-direction: column;
+    height: 45vh;
+  }
+  .slider2 .user_recommendation_text {
+    font-size: 1.1em;
+  }
+  .slider2 .user_name {
+    font-size: 0.9em;
+  }
+  .slide_btn {
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+  }
+  .user_photo {
+    width: 60%;
+    height: 80%;
+    top: 30%;
+    transform: translate(-50%);
+  }
+  .uesr_recommendation {
+    width: 90%;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .user_recommendation_text {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+  }
+  .user_name {
+    align-items: center;
+    justify-content: center;
+  }
+  .attribution {
+    display: none;
+  }
 }
