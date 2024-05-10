@@ -74,7 +74,7 @@ main {
   position: absolute;
   bottom: -5%;
   left: 5%;
-  z-index: 1;
+  z-index: 10;
 }
 .slide_btn img {
   cursor: pointer;
@@ -87,7 +87,6 @@ main {
   left: 50%;
 }
 .slider1 {
-  display: none;
 }
 .slider1_user_photo {
   background-image: url(./images/image-tanya.jpg);
@@ -95,7 +94,6 @@ main {
   background-size: cover;
 }
 .slider2 {
-  display: ;
 }
 .slider2_user_photo {
   background-image: url(./images/image-john.jpg);
